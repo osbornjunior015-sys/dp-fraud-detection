@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('🚩 Fraud Detection App')
 
-st.write('Hello world!')
+st.info('This App builds a Fraud Detection')
