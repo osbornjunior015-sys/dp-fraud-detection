@@ -12,11 +12,11 @@ with st.expander('Data'):
   df
 
   st.write('**X**')
-  x = df.drop('step', axis=1)
+  x = df.drop('amount', axis=1)
   x
 
   st.write('**y**')
-  y = df.step
+  y = df.amount
   y
 
 
