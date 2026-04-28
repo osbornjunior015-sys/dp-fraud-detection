@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import  joblib
 
-model = joblib.load("fraud_model.pkl")
 
 st.title('🚩 Fraud Detection Preadiction App')
 st.write("Enter transaction details to check if it's fraudulent.")
