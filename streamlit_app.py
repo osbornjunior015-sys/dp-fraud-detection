@@ -16,4 +16,14 @@ oldbalanceOrg = st.number_input("Old Sender Balance", min_value=0.0)
 newbalanceOrg = st.number_input("New Sender Balance", min_value=0.0)
 oldbalanceDest = st.number_input("Old Receiver Balance", min_value=0.0)
 newbalanceDest = st.number_input("New Receiver Balance", min_value=0.0)
-if st.button('Predict'):
+
+if st.button("Predict"):
+    # Prepare input
+    input_data = pd.DataFrame([[transaction_type, amount, oldbalanceOrg, newbalanceOrg, oldbalanceDest, newbalanceDest]],
+                              columns=["type","amount","oldbalanceOrg","newbalanceOrg","oldbalanceDest","newbalanceDest"])
+    
+    prediction = model.predict(input_data)[0]
+    if prediction == 1:
+        st.error("⚠️ Fraudulent Transaction Detected!")
+    else:
+        st.success("✅ Transaction is Legitimate.")
