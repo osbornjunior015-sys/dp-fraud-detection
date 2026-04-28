@@ -3,6 +3,9 @@ import pandas as pd
 
 st.title('🚩 Fraud Detection Application')
 
+with st.expander('Data'):
+   st.write('**Raw Data**')
+
 st.info('This App builds a Fraud Detection')
 df = pd.read_csv('https://raw.githubusercontent.com/osbornjunior015-sys/cleaned-fruad.data/refs/heads/main/cleaned_fraud_data.csv')
 df
