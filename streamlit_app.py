@@ -12,12 +12,12 @@ with st.expander('Data'):
      df
 
 st.write('**X**')
-X = st.drop('step', axis = 1)
-X
+x = st.drop('step', axis = 1)
+x
 
 st.write('**y**')
-Y = df.step
-Y
+y = df.step
+y
 
 
 
