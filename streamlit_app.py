@@ -11,4 +11,14 @@ with st.expander('Data'):
      df = pd.read_csv('https://raw.githubusercontent.com/osbornjunior015-sys/cleaned-fruad.data/refs/heads/main/cleaned_fraud_data.csv')
      df
 
+st.write('**X**')
+X = st.drop('amount', axis = 1)
+X
+
+st.write('**Y**')
+Y = df.amount
+Y
+
+
+
 
