@@ -11,13 +11,13 @@ with st.expander('Data'):
      df = pd.read_csv('https://raw.githubusercontent.com/osbornjunior015-sys/cleaned-fruad.data/refs/heads/main/cleaned_fraud_data.csv')
      df
 
-st.write('**X**')
-x = st.drop('step', axis=1)
-x
+     st.write('**X**')
+     x = st.drop('step', axis=1)
+     x
 
-st.write('**y**')
-y = df.step
-y
+     st.write('**y**')
+     y = df.step
+     y
 
 
 
