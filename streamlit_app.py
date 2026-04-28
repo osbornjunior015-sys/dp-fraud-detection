@@ -26,3 +26,4 @@ with st.expander('Data Visualization'):
 with st.sidebar:
   st.header('Input features')
   Transaction_type= st.selectbox('Transaction_type', ('type_TRANSFER', 'type_PAYMENT', 'type_DEBIT', 'type_CASH_OUT'))
+Amount= st.selectbox('Amount', ('old_sender_balance', 'New_sender_balance', 'Old_receiver_balance', 'New_receiver_balance'))
