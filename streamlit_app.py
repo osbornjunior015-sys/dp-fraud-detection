@@ -16,5 +16,4 @@ oldbalanceOrg = st.number_input("Old Sender Balance", min_value=0.0)
 newbalanceOrg = st.number_input("New Sender Balance", min_value=0.0)
 oldbalanceDest = st.number_input("Old Receiver Balance", min_value=0.0)
 newbalanceDest = st.number_input("New Receiver Balance", min_value=0.0)
-
-   if st.button('Predict'):
+if st.button('Predict'):
