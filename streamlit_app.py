@@ -22,6 +22,7 @@ with st.expander('Data'):
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x='oldbalanceOrg', y='newbalanceOrig', color='amount')
 
-
-
+#Data preparation
+with st.siderbar:
+  st.header('Input features')
 
